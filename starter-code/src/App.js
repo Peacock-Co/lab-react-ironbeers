@@ -1,27 +1,35 @@
 import React, { Component } from "react";
 import "./App.css";
-import images from "../public/images";
+import beers from "./images/beers.png";
+import random from "./images/random-beer.png";
+import newBeer from "./images/new-beer.png";
+
+const pub = [beers];
+const wodoo = [random];
+const tap = [newBeer];
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav class="navbar navbar-light bg-primary">
-          <span class="navbar-brand mb-0 h1">Navbar</span>
+        <nav className="navbar fixed-top navbar-light bg-primary">
+          <span className="navbar-brand mb-0 h1">Navbar</span>
         </nav>
         <div className="container_main">
-          <div className="card" style={{ width: "100%" }}>
-            <img src="" class="card-img-top" alt="beers" />
-            <div className="card-body">
-              <h2 className="card-title">All Beers</h2>
-              <p className="card-text">
-                A childlike Heineken derives perverse satisfaction from an
-                accidentally geosynchronous beer.
-              </p>
+          <a>
+            <div className="card" style={{ width: "100%" }}>
+              <img src={pub} className="card-img-top" alt="pub" />
+              <div className="card-body">
+                <h2 className="card-title">All Beers</h2>
+                <p className="card-text">
+                  A childlike Heineken derives perverse satisfaction from an
+                  accidentally geosynchronous beer.
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
           <div className="card" style={{ width: "100%" }}>
-            <img src="" class="card-img-top" alt="..." />
+            <img src={wodoo} className="card-img-top" alt="wodoo" />
             <div className="card-body">
               <h2 className="card-title">Random Beer</h2>
               <p className="card-text">
@@ -31,7 +39,7 @@ class App extends Component {
             </div>
           </div>
           <div className="card" style={{ width: "100%" }}>
-            <img src="" class="card-img-top" alt="..." />
+            <img src={tap} className="card-img-top" alt="tap" />
             <div className="card-body">
               <h2 className="card-title">New Beer</h2>
               <p className="card-text">
