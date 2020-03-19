@@ -12,3 +12,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* MEDIA QUERY MOBILE */
+
+@media only screen and (max-width: 830px) {
+
+  /* Nav bar */
+
+
+  /* CONTAINER HEADER */
+  #container_header {
+    display: flex;
+  }
+
+
+  /* MAIN CONTAINER */
+  .container_main {
+    display: flex;
+    background-color: #f4f3f4;
+    flex-direction: column;
+    height: 700px;
+    border-bottom: solid 1px #cacee0;
+  }
+
+
+}
